@@ -64,6 +64,15 @@ with tab_members:
             st.markdown("**角色：** 這零號還強迫大家跟他一起出遊，只能說被提姆討厭不是沒有原因的！")
             st.caption("#站上的狂暴者")
             
+        with st.expander("🍻 Zoe"):
+            try:
+                st.image(os.path.join(BASE_DIR, "zoe.jpg"), use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
+            st.markdown("**性生活：** 久遠")
+            st.markdown("**角色：** 被情緒勒索導致很晚才從星巴克離職的值班妹，真的很欠罵！")
+            st.caption("#P值也有人權")     
+            
         with st.expander("🌊 Dennis"):
             try:
                 st.image(os.path.join(BASE_DIR, "dennis.jpg"), use_column_width=True)
@@ -72,6 +81,16 @@ with tab_members:
             st.markdown("**定位：** 神明之子")
             st.markdown("**角色：** 據說上次哭是看媽祖繞境，陽光大男孩，也是這次旅遊的水上活動教練。")
             st.caption("#我沒有隱形")
+        
+    with col2:   
+        with st.expander("📚 Tammy"):
+            try:
+                st.image(os.path.join(BASE_DIR, "tammy.jpg"), use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
+            st.markdown("**體重：** 天文數字")
+            st.markdown("**角色：** 做飲料會讓人很難通過走道，高知識分子未來要去台北念研究所的慾女。")
+            st.caption("#性生活要有啊")
             
         with st.expander("👕 Samael"):
             try:
@@ -81,25 +100,6 @@ with tab_members:
             st.markdown("**老婆：** Anny (女同)")
             st.markdown("**角色：** 不要再給我半夜洗衣服了你他媽的！未來可能被調店的雞掰人！")
             st.caption("#香港定居者")
-
-    with col2:
-        with st.expander("🍻 Zoe"):
-            try:
-                st.image(os.path.join(BASE_DIR, "zoe.jpg"), use_column_width=True)
-            except Exception as e:
-                st.warning("照片載入失敗")
-            st.markdown("**性生活：** 久遠")
-            st.markdown("**角色：** 被情緒勒索導致很晚才從星巴克離職的值班妹，真的很欠罵！")
-            st.caption("#P值也有人權")
-            
-        with st.expander("📚 Tammy"):
-            try:
-                st.image(os.path.join(BASE_DIR, "tammy.jpg"), use_column_width=True)
-            except Exception as e:
-                st.warning("照片載入失敗")
-            st.markdown("**體重：** 天文數字")
-            st.markdown("**角色：** 做飲料會讓人很難通過走道，高知識分子未來要去台北念研究所的慾女。")
-            st.caption("#性生活要有啊")
             
         with st.expander("👶 Ryan"):
             try:
