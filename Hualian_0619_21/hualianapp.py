@@ -48,13 +48,16 @@ with tab_members:
     st.header("🔥 狂暴出勤名單")
     st.write("錢賺了就是要花啊！活著不就是要出去玩嗎？")
     
-    # 使用欄位(columns)讓版面看起來像人物卡片
+    # 自動取得目前 hualianapp.py 所在的資料夾路徑，徹底解決找不到圖片的問題
+    import os
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
     col1, col2 = st.columns(2)
     
     with col1:
         with st.expander("👑 Taowei"):
             try:
-                st.image("taowei.jpg", use_column_width=True)
+                st.image(os.path.join(BASE_DIR, "taowei.jpg"), use_column_width=True)
             except Exception as e:
                 st.warning("照片載入失敗")
             st.markdown("**性向：** 謎團")
@@ -63,7 +66,7 @@ with tab_members:
             
         with st.expander("🌊 Dennis"):
             try:
-                st.image("dennis.jpg", use_column_width=True)
+                st.image(os.path.join(BASE_DIR, "dennis.jpg"), use_column_width=True)
             except Exception as e:
                 st.warning("照片載入失敗")
             st.markdown("**定位：** 神明之子")
@@ -72,7 +75,7 @@ with tab_members:
             
         with st.expander("👕 Samael"):
             try:
-                st.image("samael.jpg", use_column_width=True)
+                st.image(os.path.join(BASE_DIR, "samael.jpg"), use_column_width=True)
             except Exception as e:
                 st.warning("照片載入失敗")
             st.markdown("**老婆：** Anny (女同)")
@@ -82,7 +85,7 @@ with tab_members:
     with col2:
         with st.expander("☕ Zoe"):
             try:
-                st.image("zoe.jpg", use_column_width=True)
+                st.image(os.path.join(BASE_DIR, "zoe.jpg"), use_column_width=True)
             except Exception as e:
                 st.warning("照片載入失敗")
             st.markdown("**性生活：** 久遠")
@@ -91,7 +94,7 @@ with tab_members:
             
         with st.expander("📚 Tammy"):
             try:
-                st.image("tammy.jpg", use_column_width=True)
+                st.image(os.path.join(BASE_DIR, "tammy.jpg"), use_column_width=True)
             except Exception as e:
                 st.warning("照片載入失敗")
             st.markdown("**體重：** 天文數字")
@@ -100,7 +103,7 @@ with tab_members:
             
         with st.expander("👶 Ryan"):
             try:
-                st.image("ryan.jpg", use_column_width=True)
+                st.image(os.path.join(BASE_DIR, "ryan.jpg"), use_column_width=True)
             except Exception as e:
                 st.warning("照片載入失敗")
             st.markdown("**前女友：** 黃姿穎")
