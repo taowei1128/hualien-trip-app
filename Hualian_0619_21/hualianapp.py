@@ -53,45 +53,56 @@ with tab_members:
     
     with col1:
         with st.expander("👑 Taowei"):
-            # 檢查圖片是否存在，存在就顯示
-            if os.path.exists("taowei.jpg"):
+            try:
                 st.image("taowei.jpg", use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
             st.markdown("**性向：** 謎團")
             st.markdown("**角色：** 這零號還強迫大家跟他一起出遊，只能說被提姆討厭不是沒有原因的！")
             st.caption("#站上的狂暴者")
             
         with st.expander("🌊 Dennis"):
-            if os.path.exists("dennis.jpg"):
+            try:
                 st.image("dennis.jpg", use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
             st.markdown("**定位：** 神明之子")
             st.markdown("**角色：** 據說上次哭是看媽祖繞境，陽光大男孩，也是這次旅遊的水上活動教練。")
             st.caption("#我沒有隱形")
             
         with st.expander("👕 Samael"):
-            if os.path.exists("samael.jpg"):
+            try:
                 st.image("samael.jpg", use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
             st.markdown("**老婆：** Anny (女同)")
             st.markdown("**角色：** 不要再給我半夜洗衣服了你他媽的！未來可能被調店的雞掰人！")
             st.caption("#香港定居者")
 
     with col2:
         with st.expander("☕ Zoe"):
-            if os.path.exists("zoe.jpg"):
+            try:
                 st.image("zoe.jpg", use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
             st.markdown("**性生活：** 久遠")
             st.markdown("**角色：** 被情緒勒索導致很晚才從星巴克離職的值班妹，真的很欠罵！")
             st.caption("#P值也有人權")
             
         with st.expander("📚 Tammy"):
-            if os.path.exists("tammy.jpg"):
+            try:
                 st.image("tammy.jpg", use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
             st.markdown("**體重：** 天文數字")
             st.markdown("**角色：** 做飲料會讓人很難通過走道，高知識分子未來要去台北念研究所的慾女。")
             st.caption("#性生活要有啊")
             
         with st.expander("👶 Ryan"):
-            if os.path.exists("ryan.jpg"):
+            try:
                 st.image("ryan.jpg", use_column_width=True)
+            except Exception as e:
+                st.warning("照片載入失敗")
             st.markdown("**前女友：** 黃姿穎")
             st.markdown("**角色：** 溫蒂的寶貝啊！未來將扛下楠梓晚班 S 的梁柱，但他其實超爛……")
             st.caption("#智商趨近於0")
