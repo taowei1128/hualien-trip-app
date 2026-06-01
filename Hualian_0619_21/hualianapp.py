@@ -48,17 +48,18 @@ with tab_schedule:
 
 # ================= 住宿資訊頁面 =================
 with tab_accommodation:
-    st.header("🏠 我們的溫馨狂暴小窩")
+    st.header("🏠 溫馨狂暴小窩")
     st.subheader("煦家 HSU+ (花蓮包棟民宿)")
     
     st.markdown("**📍 地址：** 花蓮縣花蓮市國富里國富十三街 51 號")
-    st.markdown("**🔗 IG 網頁：** [煦家 HSU+的IG連結！](https://www.instagram.com/airbnb.hsu/)")
+    st.markdown("🗺️ **導航連結：** [點我開啟 Google Map](https://maps.app.goo.gl/ifo8Mmhrmv6K4SEL7)")
+    st.markdown("**🔗 IG 網頁：** [airbnb.hsu.ig](https://www.instagram.com/airbnb.hsu/)")
     st.markdown("**📞 房東電話：** 0972-258-558")
     
     st.markdown("---")
     st.markdown("### ⏰ 入住與退房時間")
-    st.info("✅ **Check-in：** 16:00 (抵達花蓮後可先去寄放行李)")
-    st.warning("✅ **Check-out：** 11:00 (退房後行李可寄放至 15:00)")
+    st.info("✅ **Check-in：** 6 / 19 - 16:00 (抵達花蓮後可先去寄放行李)")
+    st.warning("✅ **Check-out：** 6 / 21 - 11:00 (退房後行李可寄放至 15:00)")
     
     st.markdown("---")
     st.markdown("### 🚨 住宿公約 🚨")
@@ -73,7 +74,7 @@ with tab_members:
     col1, col2 = st.columns(2)
     
     with col1:
-        with st.expander("👑 Taowei (道維)"):
+        with st.expander("👑 Taowei"):
             try:
                 st.image(os.path.join(BASE_DIR, "taowei.jpg"), use_column_width=True)
             except:
