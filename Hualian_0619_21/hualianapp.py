@@ -52,13 +52,13 @@ with tab_accommodation:
     st.subheader("煦家 HSU+ (花蓮包棟民宿)")
     
     st.markdown("**📍 地址：** 花蓮縣花蓮市國富里國富十三街 51 號")
-    st.markdown("**🔗 IG 網頁：** [airbnb.hsu](https://www.instagram.com/airbnb.hsu/)")
+    st.markdown("**🔗 IG 網頁：** [煦家 HSU+的IG連結！](https://www.instagram.com/airbnb.hsu/)")
     st.markdown("**📞 房東電話：** 0972-258-558")
     
     st.markdown("---")
     st.markdown("### ⏰ 入住與退房時間")
     st.info("✅ **Check-in：** 16:00 (抵達花蓮後可先去寄放行李)")
-    st.warning("❌ **Check-out：** 11:00 (退房後行李可寄放至 15:00)")
+    st.warning("✅ **Check-out：** 11:00 (退房後行李可寄放至 15:00)")
     
     st.markdown("---")
     st.markdown("### 🚨 住宿公約 🚨")
