@@ -248,7 +248,7 @@ with tab_members:
             st.caption("#香港定居者")
 
     with col2:
-        with st.expander("☕ Zoe"):
+        with st.expander("🍻 Zoe"):
             try:
                 st.image(os.path.join(BASE_DIR, "zoe.jpg"), use_column_width=True)
             except:
