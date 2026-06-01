@@ -1,7 +1,9 @@
 import streamlit as st
 import streamlit.components.v1 as components
-import pandas as pd
 import os
+
+# 自動取得目前 hualianapp.py 所在的資料夾絕對路徑
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 設定頁面標題與圖示
 st.set_page_config(page_title="花蓮慶功之旅", page_icon="🌊", layout="centered")
@@ -17,11 +19,9 @@ tab_schedule, tab_accommodation, tab_members = st.tabs(["🗺️ 行程總表", 
 with tab_schedule:
     day1, day2, day3 = st.tabs(["Day 1 (6/19)", "Day 2 (6/20)", "Day 3 (6/21)"])
 
-   with day1:
+    with day1:
         st.header("🌅 Day 1: 爆肝列車與太平洋狂歡")
-        
         st.info("🚆 **05:23-09:50｜新自強 3000 (411次) 爆肝列車**\n\n凌晨 5:00 新左營集合！上車後不用懷疑，全部人直接睡死到花蓮。\n\n**座位：** 4車 29, 31, 41, 43, 45, 47號")
-        
         st.success("🚗 **10:00-12:00｜熱血取車與早午餐**\n\n抵達花蓮火車站，辦理 7 人座租車手續 (Ryan 擔當大司機！)。")
         
         # 加入早午餐推薦選單
@@ -63,17 +63,13 @@ with tab_schedule:
       </filter>
     </defs>
 
-    <!-- 海洋背景 -->
     <rect x="380" y="0" width="300" height="540" fill="#daeef8" opacity="0.6"/>
-    <!-- 陸地 -->
     <rect x="0" y="0" width="400" height="540" fill="#e8f0d8" opacity="0.5"/>
 
-    <!-- 海岸線 手繪感 -->
     <path d="M385 20 C388 60, 382 110, 390 160 C396 210, 384 260, 392 310 C398 360, 385 400, 390 450 C394 490, 383 520, 385 540"
       fill="none" stroke="#6aabca" stroke-width="2.5" stroke-linecap="round"
       stroke-dasharray="6,2" opacity="0.8" filter="url(#sketch)"/>
 
-    <!-- 山脈紋路 -->
     <path d="M40 100 L60 70 L80 100" fill="none" stroke="#8aaa70" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
     <path d="M70 120 L95 85 L120 120" fill="none" stroke="#8aaa70" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
     <path d="M55 155 L75 125 L95 155" fill="none" stroke="#8aaa70" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
@@ -82,7 +78,6 @@ with tab_schedule:
     <path d="M35 260 L62 228 L90 260" fill="none" stroke="#8aaa70" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
     <path d="M60 300 L90 265 L120 300" fill="none" stroke="#8aaa70" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
 
-    <!-- 海浪紋 -->
     <path d="M410 80 Q430 72 450 80" fill="none" stroke="#6aabca" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
     <path d="M460 120 Q480 112 500 120" fill="none" stroke="#6aabca" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
     <path d="M420 200 Q445 192 468 200" fill="none" stroke="#6aabca" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
@@ -91,20 +86,16 @@ with tab_schedule:
     <path d="M510 420 Q530 412 550 420" fill="none" stroke="#6aabca" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
     <path d="M440 470 Q465 462 488 470" fill="none" stroke="#6aabca" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
 
-    <!-- 台 11 線 -->
     <path d="M365 195 C370 240, 368 290, 372 340 C374 390, 368 430, 370 470"
       fill="none" stroke="#d4904a" stroke-width="2" stroke-dasharray="8,4" stroke-linecap="round" opacity="0.7"/>
-    <!-- 台 9 線 -->
     <path d="M285 80 C282 130, 280 180, 278 240 C276 300, 274 360, 270 420"
       fill="none" stroke="#c77b3a" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
 
-    <!-- 路線標 -->
     <rect x="390" y="292" width="38" height="18" rx="4" fill="#d4904a" opacity="0.85"/>
     <text x="409" y="305" text-anchor="middle" font-size="10" font-family="sans-serif" fill="white" font-weight="600">台11</text>
     <rect x="248" y="192" width="38" height="18" rx="4" fill="#c77b3a" opacity="0.85"/>
     <text x="267" y="205" text-anchor="middle" font-size="10" font-family="sans-serif" fill="white" font-weight="600">台9</text>
 
-    <!-- Day1: 花蓮火車站 -->
     <g filter="url(#sketch)">
       <ellipse cx="290" cy="120" rx="18" ry="18" fill="#f5d66b" stroke="#c8a420" stroke-width="1.5" opacity="0.95"/>
       <text x="290" y="116" text-anchor="middle" font-size="15" font-family="sans-serif">🚆</text>
@@ -114,7 +105,6 @@ with tab_schedule:
     <text x="356" y="120" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#5a3e0a" font-weight="600">花蓮火車站</text>
     <text x="356" y="131" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#9a7c40">10:00 抵達</text>
 
-    <!-- Day1: 煦家民宿 -->
     <g filter="url(#sketch)">
       <ellipse cx="295" cy="162" rx="16" ry="16" fill="#f5d66b" stroke="#c8a420" stroke-width="1.5" opacity="0.95"/>
       <text x="295" y="158" text-anchor="middle" font-size="13" font-family="sans-serif">🏠</text>
@@ -124,7 +114,6 @@ with tab_schedule:
     <text x="359" y="163" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#5a3e0a" font-weight="600">煦家 HSU+</text>
     <text x="359" y="174" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#9a7c40">寄放行李</text>
 
-    <!-- Day1: 崇德海灘 -->
     <g filter="url(#sketch)">
       <ellipse cx="375" cy="212" rx="18" ry="18" fill="#6aabca" stroke="#2c7ea0" stroke-width="1.5" opacity="0.95"/>
       <text x="375" y="208" text-anchor="middle" font-size="15" font-family="sans-serif">🏄</text>
@@ -135,7 +124,6 @@ with tab_schedule:
     <text x="226" y="224" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#4a8eae">SUP 立槳</text>
     <line x1="270" y1="213" x2="356" y2="213" stroke="#2c7ea0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow)" opacity="0.6"/>
 
-    <!-- Day1: 慶功大餐 -->
     <g filter="url(#sketch)">
       <ellipse cx="300" cy="258" rx="16" ry="16" fill="#f5d66b" stroke="#c8a420" stroke-width="1.5" opacity="0.95"/>
       <text x="300" y="254" text-anchor="middle" font-size="13" font-family="sans-serif">🥩</text>
@@ -145,7 +133,6 @@ with tab_schedule:
     <text x="365" y="259" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#5a3e0a" font-weight="600">慶功大餐</text>
     <text x="365" y="270" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#9a7c40">東大門夜市</text>
 
-    <!-- Day2: 三棧溪 -->
     <g filter="url(#sketch)">
       <ellipse cx="340" cy="330" rx="18" ry="18" fill="#5db89a" stroke="#2a7860" stroke-width="1.5" opacity="0.95"/>
       <text x="340" y="326" text-anchor="middle" font-size="15" font-family="sans-serif">💦</text>
@@ -156,7 +143,6 @@ with tab_schedule:
     <text x="199" y="342" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#2a7860">溯溪跳水</text>
     <line x1="236" y1="331" x2="320" y2="331" stroke="#2a7860" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow)" opacity="0.6"/>
 
-    <!-- Day3: 石梯坪 -->
     <g filter="url(#sketch)">
       <ellipse cx="372" cy="458" rx="18" ry="18" fill="#e87a5a" stroke="#b04028" stroke-width="1.5" opacity="0.95"/>
       <text x="372" y="454" text-anchor="middle" font-size="15" font-family="sans-serif">📸</text>
@@ -167,13 +153,11 @@ with tab_schedule:
     <text x="225" y="470" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#b04028">踏水拍美照</text>
     <line x1="268" y1="459" x2="353" y2="459" stroke="#b04028" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow)" opacity="0.6"/>
 
-    <!-- 行程連接虛線 D1→D2→D3 -->
     <path d="M300 274 C296 296, 308 312, 324 322"
       fill="none" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#arrow)"/>
     <path d="M338 348 C344 388, 356 424, 362 440"
       fill="none" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#arrow)"/>
 
-    <!-- 圖例 -->
     <rect x="22" y="428" width="148" height="100" rx="8" fill="white" opacity="0.85" stroke="#ccc" stroke-width="1"/>
     <text x="96" y="448" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#333" font-weight="600">行程圖例</text>
     <rect x="36" y="456" width="12" height="12" rx="3" fill="#f5d66b" stroke="#c8a420" stroke-width="1"/>
@@ -185,12 +169,10 @@ with tab_schedule:
     <line x1="36" y1="516" x2="48" y2="516" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3"/>
     <text x="54" y="520" font-size="10" font-family="sans-serif" fill="#555">行程順序</text>
 
-    <!-- 標題 -->
     <rect x="135" y="14" width="210" height="40" rx="10" fill="white" opacity="0.88" stroke="#ddd" stroke-width="1"/>
     <text x="240" y="32" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#333" font-weight="700">🌊 花蓮三天兩夜行程</text>
     <text x="240" y="48" text-anchor="middle" font-size="10" font-family="sans-serif" fill="#888">6/19–6/21</text>
 
-    <!-- 太平洋 / 中央山脈 標 -->
     <text x="490" y="490" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#4a8aaa" font-weight="600" opacity="0.75">太平洋</text>
     <text x="70" y="310" text-anchor="middle" font-size="10" font-family="sans-serif" fill="#6a8a50" opacity="0.7" transform="rotate(-90 70 310)">中央山脈</text>
     </svg>
@@ -223,7 +205,6 @@ with tab_members:
     st.header("🔥 狂暴出勤名單")
     st.write("錢賺了就是要花啊！活著不就是要出去玩嗎？")
 
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     col1, col2 = st.columns(2)
 
     with col1:
