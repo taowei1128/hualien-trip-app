@@ -243,7 +243,7 @@ with tab_members:
                 st.image(os.path.join(BASE_DIR, "samael.jpg"), use_column_width=True)
             except:
                 pass
-            st.markdown("**老婆：** Anny (女同)")
+            st.markdown("**炮友：** 目前「應該」從缺")
             st.markdown("**角色：** 不要再給我半夜洗衣服了你他媽的！未來可能被調店的雞掰人！")
             st.caption("#香港定居者")
 
