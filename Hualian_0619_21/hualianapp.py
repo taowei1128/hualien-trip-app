@@ -215,7 +215,7 @@ with tab_members:
                 pass
             st.markdown("**性向：** 謎團")
             st.markdown("**角色：** 這零號還強迫大家跟他一起出遊，只能說被提姆討厭不是沒有原因的！")
-            st.caption("#站上的狂暴者")
+            st.caption("#狂暴梔子花")
 
         with st.expander("🌊 Dennis"):
             try:
