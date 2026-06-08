@@ -6,14 +6,18 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 設定頁面標題與圖示
-st.set_page_config(page_title="花蓮慶功之旅", page_icon="🌊", layout="centered")
+st.set_page_config(page_title="星巴巴花蓮之旅", page_icon="🌊", layout="centered")
 
-st.title("🎉 楠梓星巴克退役/現役小隊：花蓮三天兩夜之旅")
-st.markdown("把論文跟做不完的飲料拋到腦後，準備上山下海囉！")
+st.title("🎉 楠梓星巴克退役/現役小隊：三天兩夜吵翻花蓮")
+st.markdown("把期末和做不完的飲料拋到腦後，來上山下海啦幹！")
 st.markdown("---")
 
-# 在最上方加入頁籤切換：新增「泛舟攻略」
-tab_schedule, tab_accommodation, tab_rafting, tab_members = st.tabs(["🗺️ 行程總表", "🏠 住宿資訊", "🚣 泛舟攻略", "😎 出勤人員名單"])
+tab_schedule, tab_accommodation, tab_rafting, tab_members = st.tabs([
+    "🗺️ 行程總表", 
+    "🏠 住宿資訊", 
+    "🚣 泛舟攻略", 
+    "😎 出勤人員名單"
+])
 
 # ================= 行程表頁面 =================
 with tab_schedule:
@@ -183,7 +187,7 @@ with tab_schedule:
 
 # ================= 住宿資訊頁面 =================
 with tab_accommodation:
-    st.header("🏠 溫馨小窩")
+    st.header("🏠 溫馨狂暴小窩")
     st.subheader("煦家 HSU+ (花蓮包棟民宿)")
 
     st.markdown("**📍 地址：** 花蓮縣花蓮市國富里國富十三街 51 號")
@@ -202,7 +206,7 @@ with tab_accommodation:
 
 # ================= 泛舟攻略頁面 =================
 with tab_rafting:
-    st.header("🚣 向上泛舟：行前指南")
+    st.header("🚣 向上泛舟：行前終極指南")
     
     st.markdown("### 📍 基本資訊")
     st.markdown("**地址：** 花蓮縣瑞穗鄉瑞良村中山路三段216-1號")
@@ -221,7 +225,6 @@ with tab_rafting:
     st.error("🚫 **嚴禁攜帶：**\n* 過程中請勿攜帶貴重物品 (手機、手錶等)！若損壞遺失皆不負責。")
     
     st.success("🍱 **餐飲與其他：**\n* 請勿空腹參加！活動結束後終點有提供點心 (憑識別帶兌換)。\n* 乘船人數：一艘船 8~10 位 (可能需與他人併船)。\n* 寵物不可同行，現場無人看管。")
-
 
 # ================= 出勤人員頁面 =================
 with tab_members:
