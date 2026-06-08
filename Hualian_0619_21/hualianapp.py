@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 st.set_page_config(page_title="星巴巴花蓮之旅", page_icon="🌊", layout="centered")
 
 st.title("🎉 楠梓星巴克退役/現役小隊：三天兩夜吵翻花蓮")
-st.markdown("把期末和做不完的飲料拋到腦後，來上山下海啦幹！")
+st.markdown("幹人生活著不就是要出去玩嗎？錢賺了就是要花啊你各位啊！")
 st.markdown("---")
 
 tab_schedule, tab_accommodation, tab_rafting, tab_members = st.tabs([
@@ -24,26 +24,26 @@ with tab_schedule:
     with day1:
         st.header("🌅 Day 1: 爆肝列車與太平洋狂歡")
         st.info("🚆 **05:23-09:50｜新自強 3000 (411次) 爆肝列車**\n\n凌晨 5:00 新左營集合！上車後不用懷疑，全部人直接睡死到花蓮。\n\n**座位：** 4車 29, 31, 41, 43, 45, 47號")
-        st.success("🚗 **10:00-12:00｜熱血取車與早午餐**\n\n抵達花蓮火車站，辦理 7 人座租車手續 (Ryan 擔當大司機！)。")
+        st.success("🚗 **10:00-12:00｜熱血取車與早午餐**\n\n抵達花蓮火車站，辦理 7 人座租車手續 (宏越租車花蓮店，Ryan 擔當大司機！)。")
         with st.expander("🍳 點我看早午餐推薦清單 (請大司機導航)"):
-            st.markdown("**1. 單一純賣雞湯小卷米粉：** 11點開門，海味滿滿的花蓮必吃神店。\n**2. 森山舍：** 10點開門，日式老屋超好拍，網美打卡首選。\n**3. Country Mother's：** 大份量美式早午餐，班尼迪克蛋超讚。\n**4. 廟口紅茶：** 經典古早味，紅茶配台式馬卡龍與蛋餅。")
+            st.markdown("**1. COUNTRY MOTHER'S**\n**2. 職饗雞湯小卷米粉**\n**3. 花蓮廟口紅茶有限公司**\n**4. 周家蒸餃小籠包**")
         st.warning("🏠 **12:30-13:00｜寄放行李**\n\n前往民宿「煦家 HSU+」寄放行李。")
         st.success("🛶 **13:30-16:00｜下午大解放**\n\n崇德海灘 SUP 立槳，或找間網美咖啡廳看海耍廢。")
-        st.info("🔑 **16:30-17:30｜民宿 Check-in**\n\n回民宿洗掉一身海水與疲憊。")
-        st.error("🥩 **18:00-21:00｜慶功最高潮**\n\n慶功大餐 (老時光) ＋ 東大門夜市買醉續攤。")
+        st.info("🔑 **17:00-18:00｜Airbnb 休息時刻！**\n\n回民宿洗掉一身海水與疲憊，準備迎接晚上的行程。")
+        st.error("🥩 **18:00-20:00｜東大門夜市逛起乃！**\n\n慶功大餐 (老時光) ＋ 東大門夜市買醉續攤。")
 
     with day2:
         st.header("🚣‍♂️ Day 2: 秀姑巒溪泛舟大作戰")
-        st.info("🚐 **09:00｜專車接送 (阿丹負責聯繫司機)**\n\n請準時於指定地點上車！因為有專車，大家可以在車上繼續補眠，不用自己開車。")
-        st.success("🚣 **11:00-15:00｜向上泛舟 (瑞穗起點)**\n\n抵達瑞穗，開始長達約 4 小時的泛舟行程。這是一場體力與意志力的考驗，記得不要帶手機下水！")
+        st.info("🚐 **09:00-11:00｜專車接送至向上泛舟**\n\n提早起床喔！花蓮市區集合上接駁車 (阿丹負責聯繫司機)。大家可以在車上繼續補眠，不用自己開車。")
+        st.success("🚣 **11:00-15:00｜賣力泛舟中**\n\n開始長達約 4 小時的泛舟行程。這是一場體力與意志力的考驗，記得不要帶手機下水！")
         st.warning("🚿 **15:00-16:00｜終點長虹橋洗澡與點心**\n\n泛舟一定會全濕！終點有提供盥洗間（提供沐浴乳、洗髮精），還有點心可以憑識別帶兌換。")
         st.error("🚌 **16:00-18:00｜接駁回市區與大餐**\n\n搭乘接駁車回到市區後，直奔餐廳大口吃原住民風味餐或熱炒，彌補今天消耗的體力！")
 
     with day3:
-        st.header("🚗 Day 3: 海岸線兜風")
+        st.header("🚗 Day 3: 海岸線兜風與平安返家")
         st.info("🎶 上午：台 11 線兜風 (車上輪播 icyball) -> 石梯坪踏水拍美照")
         st.success("🛍️ 下午：採買花蓮名產 (麻糬、剝皮辣椒等)")
-        st.warning("🏠 傍晚：帶著充飽電的身心，搭車返回高雄")
+        st.warning("🚆 **17:29-21:54｜平安抵達高雄啦！**\n\n帶著充飽電的身心，搭車返回高雄。\n\n**座位：** 1車 26, 28, 29, 30, 31, 32號")
 
     st.markdown("---")
     st.subheader("🗺️ 手繪行程地圖")
@@ -204,7 +204,7 @@ with tab_rafting:
 # ================= 出勤人員頁面 =================
 with tab_members:
     st.header("🔥 狂暴出勤名單")
-    st.write("錢賺了就是要花啊！活著不就是要出去玩嗎？")
+    st.write("大家出門就是主打一個：錢賺了就是要花啊！活著不就是要出去玩嗎？")
 
     col1, col2 = st.columns(2)
 
@@ -216,7 +216,7 @@ with tab_members:
                 pass
             st.markdown("**性向：** 謎團")
             st.markdown("**角色：** 這零號還強迫大家跟他一起出遊，只能說被提姆討厭不是沒有原因的！")
-            st.caption("#站上的狂暴者")
+            st.caption("#狂暴梔子花")
 
         with st.expander("🌊 Dennis"):
             try:
@@ -232,7 +232,7 @@ with tab_members:
                 st.image(os.path.join(BASE_DIR, "samael.jpg"), use_column_width=True)
             except:
                 pass
-            st.markdown("**炮友：** 目前「應該」從缺")
+            st.markdown("**老婆：** Anny(女同")
             st.markdown("**角色：** 不要再給我半夜洗衣服了你他媽的！未來可能被調店的雞掰人！")
             st.caption("#香港定居者")
 
@@ -255,7 +255,7 @@ with tab_members:
             st.markdown("**角色：** 做飲料會讓人很難通過走道，高知識分子未來要去台北念研究所的慾女。")
             st.caption("#性生活要有啊")
 
-        with st.expander("👶 Ryan"):
+        with st.expander("👶 Pyan (Ryan)"):
             try:
                 st.image(os.path.join(BASE_DIR, "ryan.jpg"), use_column_width=True)
             except:
