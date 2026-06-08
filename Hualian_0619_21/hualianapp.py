@@ -202,7 +202,7 @@ with tab_accommodation:
 
 # ================= 泛舟攻略頁面 =================
 with tab_rafting:
-    st.header("🚣 向上泛舟：行前終極指南")
+    st.header("🚣 向上泛舟：行前指南")
     
     st.markdown("### 📍 基本資訊")
     st.markdown("**地址：** 花蓮縣瑞穗鄉瑞良村中山路三段216-1號")
