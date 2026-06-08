@@ -12,8 +12,8 @@ st.title("🎉 楠梓星巴克退役/現役小隊：花蓮三天兩夜之旅")
 st.markdown("把論文跟做不完的飲料拋到腦後，準備上山下海囉！")
 st.markdown("---")
 
-# 在最上方加入頁籤切換：新增「住宿資訊」
-tab_schedule, tab_accommodation, tab_members = st.tabs(["🗺️ 行程總表", "🏠 住宿資訊", "😎 出勤人員名單"])
+# 在最上方加入頁籤切換：新增「泛舟攻略」
+tab_schedule, tab_accommodation, tab_rafting, tab_members = st.tabs(["🗺️ 行程總表", "🏠 住宿資訊", "🚣 泛舟攻略", "😎 出勤人員名單"])
 
 # ================= 行程表頁面 =================
 with tab_schedule:
@@ -24,7 +24,6 @@ with tab_schedule:
         st.info("🚆 **05:23-09:50｜新自強 3000 (411次) 爆肝列車**\n\n凌晨 5:00 新左營集合！上車後不用懷疑，全部人直接睡死到花蓮。\n\n**座位：** 4車 29, 31, 41, 43, 45, 47號")
         st.success("🚗 **10:00-12:00｜熱血取車與早午餐**\n\n抵達花蓮火車站，辦理 7 人座租車手續 (Ryan 擔當大司機！)。")
         
-        # 加入早午餐推薦選單
         with st.expander("🍳 點我看早午餐推薦清單 (請大司機導航)"):
             st.markdown("**1. 單一純賣雞湯小卷米粉：** 11點開門，海味滿滿的花蓮必吃神店。\n**2. 森山舍：** 10點開門，日式老屋超好拍，網美打卡首選。\n**3. Country Mother's：** 大份量美式早午餐，班尼迪克蛋超讚。\n**4. 廟口紅茶：** 經典古早味，紅茶配台式馬卡龍與蛋餅。")
             
@@ -34,10 +33,11 @@ with tab_schedule:
         st.error("🥩 **18:00-21:00｜慶功最高潮**\n\n慶功大餐 (老時光) ＋ 東大門夜市買醉續攤。")
 
     with day2:
-        st.header("🧗‍♂️ Day 2: 溪谷沁涼大作戰")
-        st.info("💦 白天：三棧溪半/全日溯溪，深潭跳水跳起來！")
-        st.success("🍔 傍晚：速食炸雞快速補血，或找冷氣咖啡廳耍廢")
-        st.warning("🍻 晚上：原住民風味餐與熱炒，海鮮山產點滿桌")
+        st.header("🚣‍♂️ Day 2: 秀姑巒溪泛舟大作戰")
+        st.info("🚐 **09:00｜專車接送 (阿丹負責聯繫司機)**\n\n請準時於指定地點上車！因為有專車，大家可以在車上繼續補眠，不用自己開車。")
+        st.success("🚣 **11:00-15:00｜向上泛舟 (瑞穗起點)**\n\n抵達瑞穗，開始長達約 4 小時的泛舟行程。這是一場體力與意志力的考驗，記得不要帶手機下水！")
+        st.warning("🚿 **15:00-16:00｜終點長虹橋洗澡與點心**\n\n泛舟一定會全濕！終點有提供盥洗間（提供沐浴乳、洗髮精），還有點心可以憑識別帶兌換。")
+        st.error("🚌 **16:00-18:00｜接駁回市區與大餐**\n\n搭乘接駁車回到市區後，直奔餐廳大口吃原住民風味餐或熱炒，彌補今天消耗的體力！")
 
     with day3:
         st.header("🚗 Day 3: 海岸線兜風")
@@ -52,7 +52,7 @@ with tab_schedule:
     <div style="width:100%; max-width:680px; margin: 0 auto;">
     <svg width="100%" viewBox="0 0 680 540" role="img" xmlns="http://www.w3.org/2000/svg">
     <title>花蓮三天兩夜手繪行程地圖</title>
-    <desc>手繪風格花蓮地圖，標示六個重要景點：花蓮火車站、煦家民宿、崇德海灘、慶功大餐、三棧溪、石梯坪</desc>
+    <desc>手繪風格花蓮地圖，標示六個重要景點：花蓮火車站、煦家民宿、崇德海灘、慶功大餐、向上泛舟、石梯坪</desc>
     <defs>
       <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
         <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -134,14 +134,14 @@ with tab_schedule:
     <text x="365" y="270" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#9a7c40">東大門夜市</text>
 
     <g filter="url(#sketch)">
-      <ellipse cx="340" cy="330" rx="18" ry="18" fill="#5db89a" stroke="#2a7860" stroke-width="1.5" opacity="0.95"/>
-      <text x="340" y="326" text-anchor="middle" font-size="15" font-family="sans-serif">💦</text>
-      <text x="340" y="338" text-anchor="middle" font-size="8" font-family="sans-serif" fill="white" font-weight="700">D2</text>
+      <ellipse cx="260" cy="380" rx="18" ry="18" fill="#5db89a" stroke="#2a7860" stroke-width="1.5" opacity="0.95"/>
+      <text x="260" y="376" text-anchor="middle" font-size="15" font-family="sans-serif">🚣</text>
+      <text x="260" y="388" text-anchor="middle" font-size="8" font-family="sans-serif" fill="white" font-weight="700">D2</text>
     </g>
-    <rect x="162" y="316" width="74" height="30" rx="6" fill="white" opacity="0.9" stroke="#2a7860" stroke-width="1"/>
-    <text x="199" y="331" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#1a4e3e" font-weight="600">三棧溪</text>
-    <text x="199" y="342" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#2a7860">溯溪跳水</text>
-    <line x1="236" y1="331" x2="320" y2="331" stroke="#2a7860" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow)" opacity="0.6"/>
+    <rect x="140" y="366" width="90" height="30" rx="6" fill="white" opacity="0.9" stroke="#2a7860" stroke-width="1"/>
+    <text x="185" y="381" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#1a4e3e" font-weight="600">向上泛舟</text>
+    <text x="185" y="392" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#2a7860">專車接送</text>
+    <line x1="230" y1="381" x2="242" y2="381" stroke="#2a7860" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow)" opacity="0.6"/>
 
     <g filter="url(#sketch)">
       <ellipse cx="372" cy="458" rx="18" ry="18" fill="#e87a5a" stroke="#b04028" stroke-width="1.5" opacity="0.95"/>
@@ -153,9 +153,9 @@ with tab_schedule:
     <text x="225" y="470" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#b04028">踏水拍美照</text>
     <line x1="268" y1="459" x2="353" y2="459" stroke="#b04028" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow)" opacity="0.6"/>
 
-    <path d="M300 274 C296 296, 308 312, 324 322"
+    <path d="M300 274 C296 296, 280 340, 265 365"
       fill="none" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#arrow)"/>
-    <path d="M338 348 C344 388, 356 424, 362 440"
+    <path d="M275 390 C290 410, 340 440, 355 450"
       fill="none" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#arrow)"/>
 
     <rect x="22" y="428" width="148" height="100" rx="8" fill="white" opacity="0.85" stroke="#ccc" stroke-width="1"/>
@@ -200,6 +200,29 @@ with tab_accommodation:
     st.markdown("### 🚨 住宿公約 🚨")
     st.error("🚭 **整棟禁菸！！請 Dennis 特別注意，不要在室內抽菸！！**")
 
+# ================= 泛舟攻略頁面 =================
+with tab_rafting:
+    st.header("🚣 向上泛舟：行前終極指南")
+    
+    st.markdown("### 📍 基本資訊")
+    st.markdown("**地址：** 花蓮縣瑞穗鄉瑞良村中山路三段216-1號")
+    st.markdown("**網址：** [向上泛舟官方網站](https://hsiangsun.com.tw/)")
+    st.markdown("🚌 **接送時間：** 預計上午 09:00")
+    st.markdown("⚠️ *(時間變動以司機訊息為主，阿丹負責聯繫)*")
+    st.markdown("🗺️ **上車地點：** [點我開啟 Google Map](https://maps.app.goo.gl/mHFimqwgXfm6d1sZ9)")
+    
+    st.markdown("---")
+    st.markdown("### 🚨 泛舟活動注意事項 🚨")
+    
+    st.warning("⚠️ **健康與年齡限制：**\n* 孕婦、氣喘、心臟病、高血壓、癲癇、骨質疏鬆等禁止參加，請主動告知。\n* 0-5歲嬰孩童及65歲以上長者不適合參與。")
+    
+    st.info("👕 **服裝與裝備：**\n* 請穿著**長袖、長褲** (預防曬傷及擦傷) 及**包腳鞋** (布鞋或防水鞋)。\n* 現場可租借鞋子 (150~200元/雙)。\n* **必帶：** 換洗衣物及毛巾 (泛舟一定會全濕，終點有盥洗間及投幣吹風機)。")
+    
+    st.error("🚫 **嚴禁攜帶：**\n* 過程中請勿攜帶貴重物品 (手機、手錶等)！若損壞遺失皆不負責。")
+    
+    st.success("🍱 **餐飲與其他：**\n* 請勿空腹參加！活動結束後終點有提供點心 (憑識別帶兌換)。\n* 乘船人數：一艘船 8~10 位 (可能需與他人併船)。\n* 寵物不可同行，現場無人看管。")
+
+
 # ================= 出勤人員頁面 =================
 with tab_members:
     st.header("🔥 狂暴出勤名單")
@@ -215,7 +238,7 @@ with tab_members:
                 pass
             st.markdown("**性向：** 謎團")
             st.markdown("**角色：** 這零號還強迫大家跟他一起出遊，只能說被提姆討厭不是沒有原因的！")
-            st.caption("#狂暴梔子花")
+            st.caption("#站上的狂暴者")
 
         with st.expander("🌊 Dennis"):
             try:
