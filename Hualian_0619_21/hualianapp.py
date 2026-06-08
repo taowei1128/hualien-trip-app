@@ -183,7 +183,7 @@ with tab_schedule:
 
 # ================= 住宿資訊頁面 =================
 with tab_accommodation:
-    st.header("🏠 溫馨狂暴小窩")
+    st.header("🏠 溫馨小窩")
     st.subheader("煦家 HSU+ (花蓮包棟民宿)")
 
     st.markdown("**📍 地址：** 花蓮縣花蓮市國富里國富十三街 51 號")
