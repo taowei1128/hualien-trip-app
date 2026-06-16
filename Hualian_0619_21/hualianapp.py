@@ -50,7 +50,7 @@ with tab_schedule:
     st.markdown("---")
     st.subheader("🗺️ 手繪行程地圖")
 
-    MAP_SVG = """
+MAP_SVG = """
     <div style="width:100%; max-width:680px; margin: 0 auto;">
     <svg width="100%" viewBox="0 0 680 540" role="img" xmlns="http://www.w3.org/2000/svg">
     <title>花蓮三天兩夜手繪行程地圖</title>
@@ -136,5 +136,31 @@ with tab_schedule:
       <text x="372" y="454" text-anchor="middle" font-size="15" font-family="sans-serif">📸</text>
       <text x="372" y="466" text-anchor="middle" font-size="8" font-family="sans-serif" fill="white" font-weight="700">D3</text>
     </g>
-    <rect x="182" y
+    <rect x="182" y="444" width="86" height="30" rx="6" fill="white" opacity="0.9" stroke="#b04028" stroke-width="1"/>
+    <text x="225" y="459" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#5a1a08" font-weight="600">石梯坪</text>
+    <text x="225" y="470" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#b04028">踏水拍美照</text>
+    <line x1="268" y1="459" x2="353" y2="459" stroke="#b04028" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow)" opacity="0.6"/>
+    <path d="M300 274 C296 296, 280 340, 265 365"
+      fill="none" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#arrow)"/>
+    <path d="M275 390 C290 410, 340 440, 355 450"
+      fill="none" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#arrow)"/>
+    <rect x="22" y="428" width="148" height="100" rx="8" fill="white" opacity="0.85" stroke="#ccc" stroke-width="1"/>
+    <text x="96" y="448" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#333" font-weight="600">行程圖例</text>
+    <rect x="36" y="456" width="12" height="12" rx="3" fill="#f5d66b" stroke="#c8a420" stroke-width="1"/>
+    <text x="54" y="466" font-size="10" font-family="sans-serif" fill="#555">Day 1 景點</text>
+    <rect x="36" y="474" width="12" height="12" rx="3" fill="#5db89a" stroke="#2a7860" stroke-width="1"/>
+    <text x="54" y="484" font-size="10" font-family="sans-serif" fill="#555">Day 2 景點</text>
+    <rect x="36" y="492" width="12" height="12" rx="3" fill="#e87a5a" stroke="#b04028" stroke-width="1"/>
+    <text x="54" y="502" font-size="10" font-family="sans-serif" fill="#555">Day 3 景點</text>
+    <line x1="36" y1="516" x2="48" y2="516" stroke="#aaa" stroke-width="1.2" stroke-dasharray="4,3"/>
+    <text x="54" y="520" font-size="10" font-family="sans-serif" fill="#555">行程順序</text>
+    <rect x="135" y="14" width="210" height="40" rx="10" fill="white" opacity="0.88" stroke="#ddd" stroke-width="1"/>
+    <text x="240" y="32" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#333" font-weight="700">🌊 花蓮三天兩夜行程</text>
+    <text x="240" y="48" text-anchor="middle" font-size="10" font-family="sans-serif" fill="#888">6/19-6/21</text>
+    <text x="490" y="490" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#4a8aaa" font-weight="600" opacity="0.75">太平洋</text>
+    <text x="70" y="310" text-anchor="middle" font-size="10" font-family="sans-serif" fill="#6a8a50" opacity="0.7" transform="rotate(-90 70 310)">中央山脈</text>
+    </svg>
+    </div>
     """
+
+    components.html(MAP_SVG, height=560)
