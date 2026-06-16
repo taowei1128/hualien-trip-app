@@ -137,3 +137,4 @@ with tab_schedule:
       <text x="372" y="466" text-anchor="middle" font-size="8" font-family="sans-serif" fill="white" font-weight="700">D3</text>
     </g>
     <rect x="182" y
+    """
