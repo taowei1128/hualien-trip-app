@@ -93,7 +93,7 @@ with tab_rafting:
 # ================= 行前清單頁面 =================
 with tab_checklist:
     st.header("✅ 行前必備清單")
-    st.markdown("出發前對照這份清單，一個都不能少！勾完才能安心上路 🚀")
+    st.markdown("出發前對照這份清單！勾完才能安心上路 🚀")
     st.markdown("---")
 
     st.subheader("🎒 基本必帶")
