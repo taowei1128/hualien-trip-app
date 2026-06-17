@@ -10,10 +10,11 @@ st.title("🎉 楠梓星巴克退役/現役小隊：三天兩夜吵翻花蓮")
 st.markdown("把期末和做不完的飲料拋到腦後，來上山下海啦幹！")
 st.markdown("---")
 
-tab_schedule, tab_accommodation, tab_rafting, tab_members = st.tabs([
+tab_schedule, tab_accommodation, tab_rafting, tab_checklist, tab_members = st.tabs([
     "🗺️ 行程總表",
     "🏠 住宿資訊",
     "🚣 泛舟資訊",
+    "✅ 行前清單",
     "😎 出勤人員名單"
 ])
 
@@ -45,12 +46,11 @@ with tab_schedule:
         st.header("🎒 Day 3: 歐咪呀給買爆與平安返家")
         st.info("⏰ **09:00-11:00｜起床準備 Check out**\n\n一堆人一定都來不及收！")
         st.success("🍳 **11:00-12:00｜錢記早餐**\n\n📍地址：花蓮縣花蓮市主權里德安一街213號")
-        st.warning("🛍️ **12:00-15:30｜歐咪呀給 Time！**\n\n趕快去買！")
+        st.warning("🛍️ **12:00-15:30｜歐咪呀給 Time！**\n\n趕快去買！麻糬、剝皮辣椒、花生糖、蜂蜜！")
         st.error("🚗 **15:30-16:30｜還車與金額結算**\n\n分帳、還車！辛苦大司機 Ryan 了 <3")
         st.info("🚆 **17:29-21:54｜新自強 3000 (432次)，平安抵達高雄啦！**\n\n**座位：** 1車 26, 28, 29, 30, 31, 32號")
 
     st.markdown("---")
-
 
 # ================= 住宿資訊頁面 =================
 with tab_accommodation:
@@ -89,6 +89,82 @@ with tab_rafting:
     st.info("👕 **服裝與裝備：**\n* 請穿著**長袖、長褲** (預防曬傷及擦傷) 及**包腳鞋** (布鞋或防水鞋)。\n* 現場可租借鞋子 (150~200元/雙)。\n* **必帶：** 換洗衣物及毛巾 (泛舟一定會全濕，終點有盥洗間及投幣吹風機)。")
     st.error("🚫 **嚴禁攜帶：**\n* 過程中請勿攜帶貴重物品 (手機、手錶等)！若損壞遺失皆不負責。")
     st.success("🍱 **其他：**\n* 請勿空腹參加！活動結束後終點有提供點心 (憑識別帶兌換)。\n* 乘船人數：一艘船 8~10 位 (可能需與他人併船)。\n* 寵物不可同行，現場無人看管。")
+
+# ================= 行前清單頁面 =================
+with tab_checklist:
+    st.header("✅ 行前必備清單")
+    st.markdown("出發前對照這份清單，一個都不能少！勾完才能安心上路 🚀")
+    st.markdown("---")
+
+    st.subheader("🎒 基本必帶")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.checkbox("身分證 / 健保卡")
+        st.checkbox("現金（夜市、小攤位很多不收刷卡）")
+        st.checkbox("手機充電線")
+        st.checkbox("行動電源")
+    with col2:
+        st.checkbox("個人藥品（暈車藥、胃藥、止痛藥）")
+        st.checkbox("耳機")
+        st.checkbox("雨傘 / 輕便雨衣")
+        st.checkbox("環保袋 / 折疊袋（買一堆東西裝）")
+
+    st.markdown("---")
+
+    st.subheader("👕 衣物類")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.checkbox("換洗衣物 3 套")
+        st.checkbox("長袖上衣（泛舟必穿）")
+        st.checkbox("長褲（泛舟必穿）")
+        st.checkbox("包腳鞋（布鞋或防水鞋）")
+    with col2:
+        st.checkbox("拖鞋（民宿備用）")
+        st.checkbox("帽子")
+        st.checkbox("太陽眼鏡")
+        st.checkbox("泛舟專用換洗衣物一套（泛完全濕）")
+
+    st.markdown("---")
+
+    st.subheader("🧴 盥洗用品")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.checkbox("牙刷牙膏")
+        st.checkbox("洗面乳")
+        st.checkbox("洗髮精 / 沐浴乳（確認民宿有附）")
+    with col2:
+        st.checkbox("防曬乳（戶外必備！）")
+        st.checkbox("毛巾（泛舟終點用）")
+        st.checkbox("保養品")
+
+    st.markdown("---")
+
+    st.subheader("🚣 泛舟專用（Day 2 最重要）")
+    st.error("⚠️ 手機不要帶下水！損壞不負責！")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.checkbox("防水袋 / 夾鏈袋（裝錢包放岸上）")
+        st.checkbox("包腳鞋（確認有帶）")
+        st.checkbox("長袖長褲（確認有帶）")
+    with col2:
+        st.checkbox("毛巾（終點洗完要用）")
+        st.checkbox("換洗衣物（泛舟後替換）")
+        st.checkbox("記得吃早餐，不能空腹去！")
+
+    st.markdown("---")
+
+    st.subheader("🛍️ Day 3 買名產專用")
+    st.warning("⚠️ 剝皮辣椒是冷凍狀態，沒有保冷袋搭火車到高雄會融掉！")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.checkbox("保冷袋（裝剝皮辣椒用）")
+        st.checkbox("大袋子 / 行李箱空間預留")
+    with col2:
+        st.checkbox("名產預算現金準備好")
+        st.checkbox("伴手禮對象 & 數量先想好")
+
+    st.markdown("---")
+    st.success("🎉 全部勾完了嗎？收好行李，準備出發吵翻花蓮！🌊")
 
 # ================= 出勤人員頁面 =================
 with tab_members:
