@@ -100,14 +100,14 @@ with tab_checklist:
     col1, col2 = st.columns(2)
     with col1:
         st.checkbox("身分證 / 健保卡")
-        st.checkbox("現金（夜市、小攤位很多不收刷卡）")
+        st.checkbox("夠用的現金")
         st.checkbox("手機充電線")
         st.checkbox("行動電源")
     with col2:
         st.checkbox("個人藥品（暈車藥、胃藥、止痛藥）")
-        st.checkbox("耳機")
+        st.checkbox("防曬乳（看個人攜帶）")
         st.checkbox("雨傘 / 輕便雨衣")
-        st.checkbox("環保袋 / 折疊袋（買一堆東西裝）")
+        st.checkbox("袋子 OR 塑膠袋（備用裝東西）")
 
     st.markdown("---")
 
@@ -115,14 +115,11 @@ with tab_checklist:
     col1, col2 = st.columns(2)
     with col1:
         st.checkbox("換洗衣物 3 套")
-        st.checkbox("長袖上衣（泛舟必穿）")
-        st.checkbox("長褲（泛舟必穿）")
-        st.checkbox("包腳鞋（布鞋或防水鞋）")
+        st.checkbox("長袖上衣（泛舟公司建議）")
+        st.checkbox("長褲（泛舟公司建議）")
     with col2:
-        st.checkbox("拖鞋（民宿備用）")
-        st.checkbox("帽子")
-        st.checkbox("太陽眼鏡")
-        st.checkbox("泛舟專用換洗衣物一套（泛完全濕）")
+        st.checkbox("包腳鞋（布鞋或防水鞋）")
+        st.checkbox("帽子（看各人防曬或穿搭）")
 
     st.markdown("---")
 
@@ -131,40 +128,24 @@ with tab_checklist:
     with col1:
         st.checkbox("牙刷牙膏")
         st.checkbox("洗面乳")
-        st.checkbox("洗髮精 / 沐浴乳（確認民宿有附）")
     with col2:
-        st.checkbox("防曬乳（戶外必備！）")
         st.checkbox("毛巾（泛舟終點用）")
-        st.checkbox("保養品")
+        st.checkbox("保養品（看個人）")
 
     st.markdown("---")
 
-    st.subheader("🚣 泛舟專用（Day 2 最重要）")
+    st.subheader("🚣 泛舟專用")
     st.error("⚠️ 手機不要帶下水！損壞不負責！")
     col1, col2 = st.columns(2)
     with col1:
-        st.checkbox("防水袋 / 夾鏈袋（裝錢包放岸上）")
         st.checkbox("包腳鞋（確認有帶）")
         st.checkbox("長袖長褲（確認有帶）")
     with col2:
         st.checkbox("毛巾（終點洗完要用）")
         st.checkbox("換洗衣物（泛舟後替換）")
-        st.checkbox("記得吃早餐，不能空腹去！")
 
     st.markdown("---")
-
-    st.subheader("🛍️ Day 3 買名產專用")
-    st.warning("⚠️ 剝皮辣椒是冷凍狀態，沒有保冷袋搭火車到高雄會融掉！")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.checkbox("保冷袋（裝剝皮辣椒用）")
-        st.checkbox("大袋子 / 行李箱空間預留")
-    with col2:
-        st.checkbox("名產預算現金準備好")
-        st.checkbox("伴手禮對象 & 數量先想好")
-
-    st.markdown("---")
-    st.success("🎉 全部勾完了嗎？收好行李，準備出發吵翻花蓮！🌊")
+    st.success("🎉 全部勾完了嗎？收好行李，準備去吵翻花蓮！🌊")
 
 # ================= 出勤人員頁面 =================
 with tab_members:
