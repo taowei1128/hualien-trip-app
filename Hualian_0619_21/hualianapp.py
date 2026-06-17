@@ -133,18 +133,6 @@ with tab_checklist:
         st.checkbox("保養品（看個人）")
 
     st.markdown("---")
-
-    st.subheader("🚣 泛舟專用")
-    st.error("⚠️ 手機不要帶下水！損壞不負責！")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.checkbox("包腳鞋（確認有帶）")
-        st.checkbox("長袖長褲（確認有帶）")
-    with col2:
-        st.checkbox("毛巾（終點洗完要用）")
-        st.checkbox("換洗衣物（泛舟後替換）")
-
-    st.markdown("---")
     st.success("🎉 全部勾完了嗎？收好行李，準備去吵翻花蓮！🌊")
 
 # ================= 出勤人員頁面 =================
