@@ -153,7 +153,7 @@ with tab_members:
                 pass
             st.markdown("**性向：** 謎團")
             st.markdown("**角色：** 這肛零號還強迫大家跟他一起出遊，只能說被提姆討厭不是沒有原因的！")
-            st.caption("#站上的狂暴者")
+            st.caption("#站上的狂暴者 #男性玩物 #騷肛")
 
         with st.expander("🌊 Dennis"):
             try:
@@ -162,7 +162,7 @@ with tab_members:
                 pass
             st.markdown("**定位：** 神明之子")
             st.markdown("**角色：** 據說上次哭是看媽祖繞境，陽光焦炭男孩，也是這次旅遊的水上活動教練")
-            st.caption("#我沒有隱形")
+            st.caption("#我沒有隱形 #我不是姊妹 #母胎")
 
         with st.expander("👕 Samael"):
             try:
@@ -171,7 +171,7 @@ with tab_members:
                 pass
             st.markdown("**炮友：** 目前「應該」從缺")
             st.markdown("**角色：** 不要再給我半夜洗衣服了你他媽的！未來要被調到其他店去偷懶了！ ")
-            st.caption("#香港定居者")
+            st.caption("#香港定居者 #Yuci緋聞對象 #去死")
 
     with col2:
         with st.expander("🍻 Zoe"):
@@ -181,7 +181,7 @@ with tab_members:
                 pass
             st.markdown("**性生活：** 久遠")
             st.markdown("**角色：** 目前年齡為25歲，絕對不會跳慢搖的值班女，預計將於明年畢業（應該）")
-            st.caption("#P值也有人權")
+            st.caption("#P值有人權 #黃先生極光女 #孕婦")
 
         with st.expander("📚 Tammy"):
             try:
@@ -190,7 +190,7 @@ with tab_members:
                 pass
             st.markdown("**體重：** 天文數字")
             st.markdown("**角色：** 做飲料會讓人很難通過走道，高知識分子未來要去台北念研究所的慾女")
-            st.caption("#性生活要有啊")
+            st.caption("#性生活要有 #阿丹寶貝 #體脂比工時高")
 
         with st.expander("👶 Ryan"):
             try:
@@ -199,4 +199,4 @@ with tab_members:
                 pass
             st.markdown("**前女友：** 黃姿穎")
             st.markdown("**角色：** 溫蒂的寶貝啊！未來將扛下楠梓晚班S的梁柱，但其實超爛狂被客訴…")
-            st.caption("#低能兒")
+            st.caption("#低能兒 #再想復合就去死 #準備被當")
