@@ -134,7 +134,7 @@ with tab_checklist:
 
     st.markdown("---")
     st.subheader("💛 最重要！")
-    st.checkbox("一顆愉悅的心情 😊")
+    st.checkbox("愉悅的心情 😊")
     st.markdown("---")
     st.success("🎉 全部勾完了嗎？收好行李，準備出發吵翻花蓮！🌊")
 
