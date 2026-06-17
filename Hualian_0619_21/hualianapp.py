@@ -133,7 +133,10 @@ with tab_checklist:
         st.checkbox("保養品（看個人）")
 
     st.markdown("---")
-    st.success("🎉 全部勾完了嗎？收好行李，準備去吵翻花蓮！🌊")
+    st.subheader("💛 最重要！")
+    st.checkbox("一顆愉悅的心情 😊")
+    st.markdown("---")
+    st.success("🎉 全部勾完了嗎？收好行李，準備出發吵翻花蓮！🌊")
 
 # ================= 出勤人員頁面 =================
 with tab_members:
